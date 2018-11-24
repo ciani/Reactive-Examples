@@ -1,11 +1,9 @@
-﻿using System;
-using System.Reactive.Linq;
-using System.Reactive.Disposables;
-using System.Threading;
-
-namespace ReactiveExtensionExamples.Utilities
+﻿namespace ReactiveExtensionExamples.Utilities
 {
-	public static class IObservableExtensions
+    using System;
+    using System.Reactive.Disposables;
+
+    public static class IObservableExtensions
 	{
 		public static TDisposable DisposeWith<TDisposable> (this TDisposable observable, CompositeDisposable disposables) where TDisposable : class, IDisposable
 		{

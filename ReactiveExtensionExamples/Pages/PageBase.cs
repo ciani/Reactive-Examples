@@ -1,10 +1,9 @@
-﻿using System;
-using Xamarin.Forms;
-using System.Reactive.Disposables;
-
-namespace ReactiveExtensionExamples.Pages
+﻿namespace ReactiveExtensionExamples.Pages
 {
-	public class PageBase : ContentPage
+    using System.Reactive.Disposables;
+    using Xamarin.Forms;
+
+    public class PageBase : ContentPage
 	{
 		protected readonly CompositeDisposable SubscriptionDisposables = new CompositeDisposable ();
 

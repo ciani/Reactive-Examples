@@ -39,7 +39,7 @@ namespace ReactiveExtensionExamples.Pages
 					x => textEntry.TextChanged -= x
 				)
 				.Buffer (TimeSpan.FromSeconds (3), TaskPoolScheduler.Default)
-				.Where (argsList => argsList?.Any () ?? false)
+				.Where (argsList => argsList?.Any() ?? false)
 				.Select(argsList => 
 					string.Join(
 						Environment.NewLine, 
