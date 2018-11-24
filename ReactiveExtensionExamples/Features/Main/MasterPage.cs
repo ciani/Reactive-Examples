@@ -55,19 +55,6 @@
             };
             navigationContainer.Children.Add(bufferWithWhere);
 
-            Button sample = new Button
-            {
-                Text = "Sample",
-                Command = new Command(() => this.selectedNavigation.OnNext(NavigationPages.Sample)),
-            };
-            navigationContainer.Children.Add(sample);
-
-            Button scan = new Button
-            {
-                Text = "Scan",
-                Command = new Command(() => this.selectedNavigation.OnNext(NavigationPages.Scan)),
-            };
-            navigationContainer.Children.Add(scan);
 
             Button merge = new Button
             {
@@ -103,56 +90,6 @@
                 Command = new Command(() => this.selectedNavigation.OnNext(NavigationPages.AsyncEvents)),
             };
             navigationContainer.Children.Add(asyncEvents);
-
-            Button standardSearch = new Button
-            {
-                Text = "Standard Search",
-                Command = new Command(() => this.selectedNavigation.OnNext(NavigationPages.StandardSearch)),
-            };
-            navigationContainer.Children.Add(standardSearch);
-
-            Button searchWithReactiveExtensions = new Button
-            {
-                Text = "Search with Reactive Extensions",
-                Command = new Command(() => this.selectedNavigation.OnNext(NavigationPages.SearchWithReactiveExtensions)),
-            };
-            navigationContainer.Children.Add(searchWithReactiveExtensions);
-
-            Button rxuiSearch = new Button
-            {
-                Text = "RxUI - Search",
-                Command = new Command(() => this.selectedNavigation.OnNext(NavigationPages.RxUiSearch)),
-            };
-            navigationContainer.Children.Add(rxuiSearch);
-
-            Button rxuiColorSlider = new Button
-            {
-                Text = "RxUI - Color Slider",
-                Command = new Command(() => this.selectedNavigation.OnNext(NavigationPages.RxUiColorSlider)),
-            };
-            navigationContainer.Children.Add(rxuiColorSlider);
-
-            Button rxuiLogin = new Button
-            {
-                Text = "RxUI - Login",
-                Command = new Command(() => this.selectedNavigation.OnNext(NavigationPages.RxUiLogin)),
-            };
-            navigationContainer.Children.Add(rxuiLogin);
-
-            Button rxuiEssentials = new Button
-            {
-                Text = "RxUI - Xamarin Essentials",
-                Command = new Command(() => this.selectedNavigation.OnNext(NavigationPages.RxUiXamarinEssentials)),
-            };
-            navigationContainer.Children.Add(rxuiEssentials);
-
-            Image reactiveLogo = new Image
-            {
-                Source = "reactive_logo.png",
-                Aspect = Aspect.AspectFit,
-                Margin = new Thickness(50d)
-            };
-            navigationContainer.Children.Add(reactiveLogo);
 
             Content = scrollContainer;
         }

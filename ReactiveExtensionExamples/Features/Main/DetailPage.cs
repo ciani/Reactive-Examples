@@ -52,38 +52,38 @@
                             selectedPage = new Samples.BufferWithWhereView();
                             break;
                         case NavigationPages.Merge:
-                            selectedPage = new Pages.Merge();
+                            selectedPage = new Samples.MergeView();
                             break;
-                        case NavigationPages.Sample:
-                            selectedPage = new Pages.Sample();
-                            break;
-                        case NavigationPages.Scan:
-                            selectedPage = new Pages.Scan();
-                            break;
+                        //case NavigationPages.Sample:
+                        //    selectedPage = new Pages.Sample();
+                        //    break;
+                        //case NavigationPages.Scan:
+                        //    selectedPage = new Pages.Scan();
+                        //    break;
                         case NavigationPages.AsyncToObservable:
                             selectedPage = new Pages.AsyncToObservable();
                             break;
                         case NavigationPages.CombineLatest:
-                            selectedPage = new Pages.CombineLatest();
+                            selectedPage = new Samples.CombineLatestView();
                             break;
-                        case NavigationPages.StandardSearch:
-                            selectedPage = new Pages.StandardSearch();
-                            break;
-                        case NavigationPages.SearchWithReactiveExtensions:
-                            selectedPage = new Pages.SearchWithReactiveExtensions();
-                            break;
-                        case NavigationPages.RxUiSearch:
-                            selectedPage = new Pages.ReactiveUiSearch();
-                            break;
-                        case NavigationPages.RxUiColorSlider:
-                            selectedPage = new Pages.ReactiveUiColorSlider();
-                            break;
-                        case NavigationPages.RxUiLogin:
-                            selectedPage = new Pages.ReactiveUiLogin();
-                            break;
-                        case NavigationPages.RxUiXamarinEssentials:
-                            selectedPage = new Pages.ReactiveUiEssentials();
-                            break;
+                        //case NavigationPages.StandardSearch:
+                        //    selectedPage = new Pages.StandardSearch();
+                        //    break;
+                        //case NavigationPages.SearchWithReactiveExtensions:
+                        //    selectedPage = new Pages.SearchWithReactiveExtensions();
+                        //    break;
+                        //case NavigationPages.RxUiSearch:
+                        //    selectedPage = new Pages.ReactiveUiSearch();
+                        //    break;
+                        //case NavigationPages.RxUiColorSlider:
+                        //    selectedPage = new Pages.ReactiveUiColorSlider();
+                        //    break;
+                        //case NavigationPages.RxUiLogin:
+                        //    selectedPage = new Pages.ReactiveUiLogin();
+                        //    break;
+                        //case NavigationPages.RxUiXamarinEssentials:
+                        //    selectedPage = new Pages.ReactiveUiEssentials();
+                        //    break;
                         default:
                             break;
                     }
