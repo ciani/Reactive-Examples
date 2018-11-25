@@ -69,7 +69,7 @@ namespace ReactiveExtensionExamples.Pages
 		}
 
 		Task<IEnumerable<RssEntry>> DownloadMultipleRss(CancellationToken ct){
-            return Task.Run<IEnumerable<RssEntry>>(async () =>
+            return Task.Run(async () =>
             {
 
                 System.Diagnostics.Debug.WriteLine($"Starting download at {DateTimeOffset.Now}");

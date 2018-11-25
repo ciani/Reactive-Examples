@@ -1,10 +1,8 @@
-﻿using System;
+﻿using ReactiveUI;
+using ReactiveUI.XamForms;
 using System.Reactive.Disposables;
 using System.Reactive.Linq;
-using ReactiveUI;
 using Xamarin.Forms;
-using System.Threading.Tasks;
-using ReactiveUI.XamForms;
 
 namespace ReactiveExtensionExamples.Pages
 {
@@ -18,7 +16,7 @@ namespace ReactiveExtensionExamples.Pages
 
 		public ReactiveUiColorSlider ()
 		{
-			ViewModel = new ReactiveExtensionExamples.ViewModels.ColorSlider ();
+			ViewModel = new ViewModels.ColorSlider ();
 
 			Title = "RxUI - Color Slider";
 

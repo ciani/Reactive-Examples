@@ -16,7 +16,7 @@ namespace ReactiveExtensionExamples.Pages
 
 		public ReactiveUiEssentials ()
 		{
-			ViewModel = new ReactiveExtensionExamples.ViewModels.XamarinEssentials ();
+			ViewModel = new ViewModels.XamarinEssentials ();
 
 			Title = "RxUI - Xamarin Essentials";
 

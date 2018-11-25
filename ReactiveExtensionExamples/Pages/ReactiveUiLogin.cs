@@ -18,7 +18,7 @@ namespace ReactiveExtensionExamples.Pages
 
 		public ReactiveUiLogin ()
 		{
-			ViewModel = new ReactiveExtensionExamples.ViewModels.Login ();
+			ViewModel = new ViewModels.Login ();
 
 			Title = "RxUI - Login";
 
