@@ -154,3 +154,5 @@ $RECYCLE.BIN/
 \.vs/
 
 Droid/Resources/Resource\.designer\.cs
+
+\._ReactiveExtensionExamples\.sln

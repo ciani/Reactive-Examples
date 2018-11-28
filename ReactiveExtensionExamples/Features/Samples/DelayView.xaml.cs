@@ -15,10 +15,26 @@
             InitializeComponent();
         }
 
+        protected override void OnAppearing()
+        {
+            base.OnAppearing(); 
+        }
+
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+        }
+
         protected override void CreateBindingsAndSubscribes(CompositeDisposable disposables)
         {
             base.CreateBindingsAndSubscribes(disposables);
             this.disposables.Add(this.Bind(ViewModel, vm => vm.SearchText, v => v.textEntry.Text));
+
+
+            Observable.Range(1, 100).Subscribe(num => 
+            {
+                Console.WriteLine(num);
+            });
 
             Observable
                .FromEventPattern<EventHandler<TextChangedEventArgs>, TextChangedEventArgs>(

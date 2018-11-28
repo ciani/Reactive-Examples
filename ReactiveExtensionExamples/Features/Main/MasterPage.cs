@@ -70,26 +70,12 @@
             };
             navigationContainer.Children.Add(combineLatest);
 
-            Button asyncToObservable = new Button
+            Button login = new Button
             {
-                Text = "Mix Async With Observables",
-                Command = new Command(() => this.selectedNavigation.OnNext(NavigationPages.AsyncToObservable)),
+                Text = "Login",
+                Command = new Command(() => this.selectedNavigation.OnNext(NavigationPages.RxUiLogin)),
             };
-            navigationContainer.Children.Add(asyncToObservable);
-
-            Button reactiveAsync = new Button
-            {
-                Text = "Async",
-                Command = new Command(() => this.selectedNavigation.OnNext(NavigationPages.Async)),
-            };
-            navigationContainer.Children.Add(reactiveAsync);
-
-            Button asyncEvents = new Button
-            {
-                Text = "Async Events",
-                Command = new Command(() => this.selectedNavigation.OnNext(NavigationPages.AsyncEvents)),
-            };
-            navigationContainer.Children.Add(asyncEvents);
+            navigationContainer.Children.Add(login);
 
             Content = scrollContainer;
         }

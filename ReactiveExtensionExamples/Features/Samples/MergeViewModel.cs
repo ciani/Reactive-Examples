@@ -28,7 +28,7 @@
         private void ExecuteShowResultCommand(string name)
         {
             if (name.ToLowerInvariant() != "ciani")
-                Result = $"{name} has broken the buil!";
+                Result = $"{name} has broken the build!";
             else
                 Result = $"He has not broke the build!";
         }
